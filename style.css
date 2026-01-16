@@ -1,0 +1,438 @@
+/* ==========================
+   RESET & GLOBAL STYLING
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+        url("walet.png") no-repeat center / cover;
+    color: #fff;
+}
+
+.hero h1,
+.hero p,
+.cta h2,
+.cta p,
+.about p,
+.features h3,
+.features p,
+.produk h2,
+.produk .subtitle {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    color: #fff; /* pastikan tetap putih terang */
+}
+
+.btn.primary,
+.btn.outline {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.about .container,
+.features .container,
+.produk .container,
+.cta .container,
+.hero .container {
+    background: rgba(0, 0, 0, 0.35); /* gelapkan sedikit */
+    backdrop-filter: blur(15px);
+}
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, .btn {
+    font-weight: 600; /* huruf lebih tebal agar jelas */
+}
+
+
+/* ==========================
+   CONTAINER
+========================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo:active {
+    transform: scale(1.08);
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(254, 234, 21, 0.77);
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+.hero {
+    padding: 100px 0;
+}
+
+.hero .container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.95;
+    text-align: center;
+}
+
+/* HERO GRID */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text .badge {
+    display: inline-block;
+    background: rgba(254, 234, 21, 0.77);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #ccc;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons,
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn,
+.buttons .btn {
+    padding: 14px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn.primary,
+.buttons .primary {
+    background: white;
+    color: #1e3c72;
+}
+
+.btn.primary:hover {
+    background: rgba(254, 234, 21, 0.77);
+}
+
+.btn.outline,
+.buttons .secondary {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn.outline:hover,
+.buttons .secondary:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* HERO VISUAL */
+.hero-visual {
+    position: relative;
+}
+
+.hero-visual img {
+    width: 80%;
+    border-radius: 14px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+
+/* HERO INFO ICONS */
+.hero-info,
+.badge i,
+.buttons i {
+    display: flex;
+    gap: 6px;
+    margin-right: 6px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    opacity: 0.95;
+    justify-content: center;
+}
+
+/* ==========================
+   SECTION STYLING
+========================== */
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GLASS CARD STYLING FOR ABOUT, FEATURES, PRODUK, CTA */
+.about .container,
+.features .container,
+.produk .container,
+.cta .container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* ABOUT SECTION */
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    opacity: 0.95;
+}
+
+/* ==========================
+   GRID SYSTEM
+========================== */
+.grid,
+.features-grid,
+.produk-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.features-grid {
+    margin-top: 40px;
+}
+
+.produk-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+.card,
+.produk-card,
+.feature-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.produk-card:hover {
+    transform: translateY(-8px);
+}
+
+.produk-card {
+    background: rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+.produk-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+/* PRODUK CARD CONTENT */
+.produk-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.produk-card h3 {
+    margin: 18px 0 8px;
+    font-size: 20px;
+}
+
+.produk-card p {
+    padding: 0 18px 22px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* FEATURES */
+.feature-card {
+    padding: 30px 25px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+}
+
+.cta .btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ==========================
+   PRODUK SECTION
+========================== */
+.produk h2 {
+    color: #fff;
+}
+
+.produk .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* ==========================
+   RESPONSIVE STYLING
+========================== */
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
